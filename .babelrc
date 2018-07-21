@@ -1,3 +1,19 @@
 {
-  "presets": ["react-native"]
+  "presets": [
+    ["@babel/preset-env", {
+      "targets": {
+        "browsers": "iOS >= 11"
+      },
+      "loose": true,
+      "useBuiltIns": "usage",
+      "shippedProposals": true
+    }],
+    ["@babel/preset-stage-3", {
+      "loose": true,
+      "useBuiltIns": true
+    }],
+    ["@babel/preset-react", {
+      "useBuiltIns": true
+    }]
+  ]
 }
