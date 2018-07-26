@@ -1,4 +1,5 @@
 apply plugin: "com.android.application"
+apply plugin: "com.jaredsburrows.license"
 
 import com.android.build.OutputFile
 
@@ -152,4 +153,11 @@ dependencies {
 task copyDownloadableDepsToLibs(type: Copy) {
     from configurations.compile
     into 'libs'
+}
+
+licenseReport {
+    generateHtmlReport = false
+    generateJsonReport = true
+    copyHtmlReportToAssets = false
+    copyJsonReportToAssets = false
 }

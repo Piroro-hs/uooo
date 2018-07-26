@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "license:generate": "node scripts/license/generate.js",
+    "license:updateList": "node scripts/license/updateList.js",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
   },
@@ -16,10 +18,14 @@
     "@babel/preset-react": "7.0.0-beta.47",
     "@babel/preset-stage-3": "7.0.0-beta.47",
     "babel-jest": "23.4.0",
+    "babel-loader": "^8.0.0-beta.4",
     "eslint": "^4.19.1",
     "eslint-config-piroro": "github:Piroro-hs/eslint-config-piroro",
     "jest": "23.4.1",
-    "react-test-renderer": "16.4.1"
+    "license-checker": "^20.1.0",
+    "react-test-renderer": "16.4.1",
+    "request": "^2.87.0",
+    "webpack": "^4.16.1"
   },
   "jest": {
     "preset": "react-native"

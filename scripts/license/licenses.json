@@ -1,0 +1,279 @@
+{
+  "npm": [
+    {
+      "name": "fbjs",
+      "url": "https://github.com/facebook/fbjs",
+      "license": {
+        "type": "file",
+        "content": "D:\\Piroro\\Documents\\Projects\\uooo\\node_modules\\react-native\\node_modules\\fbjs\\LICENSE"
+      }
+    },
+    {
+      "name": "object-assign",
+      "url": "https://github.com/sindresorhus/object-assign",
+      "license": {
+        "type": "file",
+        "content": "D:\\Piroro\\Documents\\Projects\\uooo\\node_modules\\object-assign\\license"
+      }
+    },
+    {
+      "name": "prop-types",
+      "url": "https://github.com/facebook/prop-types",
+      "license": {
+        "type": "file",
+        "content": "D:\\Piroro\\Documents\\Projects\\uooo\\node_modules\\prop-types\\LICENSE"
+      }
+    },
+    {
+      "name": "react-native",
+      "url": "https://github.com/facebook/react-native",
+      "license": {
+        "type": "file",
+        "content": "D:\\Piroro\\Documents\\Projects\\uooo\\node_modules\\react-native\\LICENSE"
+      }
+    },
+    {
+      "name": "react",
+      "url": "https://github.com/facebook/react",
+      "license": {
+        "type": "file",
+        "content": "D:\\Piroro\\Documents\\Projects\\uooo\\node_modules\\react\\LICENSE"
+      }
+    }
+  ],
+  "gradle": [
+    {
+      "name": "Android AppCompat Library v7",
+      "url": "http://developer.android.com/tools/extras/support-library.html",
+      "license": null,
+      "skip": true
+    },
+    {
+      "name": "Android Arch-Common",
+      "url": "https://developer.android.com/topic/libraries/architecture/index.html",
+      "license": null,
+      "skip": true
+    },
+    {
+      "name": "Android Arch-Runtime",
+      "url": "https://developer.android.com/topic/libraries/architecture/index.html",
+      "license": null,
+      "skip": true
+    },
+    {
+      "name": "Android Lifecycle LiveData Core",
+      "url": "https://developer.android.com/topic/libraries/architecture/index.html",
+      "license": null,
+      "skip": true
+    },
+    {
+      "name": "Android Lifecycle Runtime",
+      "url": "https://developer.android.com/topic/libraries/architecture/index.html",
+      "license": null,
+      "skip": true
+    },
+    {
+      "name": "Android Lifecycle ViewModel",
+      "url": "https://developer.android.com/topic/libraries/architecture/index.html",
+      "license": null,
+      "skip": true
+    },
+    {
+      "name": "Android Lifecycle-Common",
+      "url": "https://developer.android.com/topic/libraries/architecture/index.html",
+      "license": null,
+      "skip": true
+    },
+    {
+      "name": "Android Support AnimatedVectorDrawable",
+      "url": "http://developer.android.com/tools/extras/support-library.html",
+      "license": null,
+      "skip": true
+    },
+    {
+      "name": "Android Support Library Annotations",
+      "url": "http://developer.android.com/tools/extras/support-library.html",
+      "license": null,
+      "skip": true
+    },
+    {
+      "name": "Android Support Library compat",
+      "url": "http://developer.android.com/tools/extras/support-library.html",
+      "license": null,
+      "skip": true
+    },
+    {
+      "name": "Android Support Library core UI",
+      "url": "http://developer.android.com/tools/extras/support-library.html",
+      "license": null,
+      "skip": true
+    },
+    {
+      "name": "Android Support Library core utils",
+      "url": "http://developer.android.com/tools/extras/support-library.html",
+      "license": null,
+      "skip": true
+    },
+    {
+      "name": "Android Support Library fragment",
+      "url": "http://developer.android.com/tools/extras/support-library.html",
+      "license": null,
+      "skip": true
+    },
+    {
+      "name": "Android Support VectorDrawable",
+      "url": "http://developer.android.com/tools/extras/support-library.html",
+      "license": null,
+      "skip": true
+    },
+    {
+      "name": "Bolts-Tasks",
+      "url": "https://github.com/BoltsFramework/Bolts-Android",
+      "license": {
+        "type": "url",
+        "content": "https://raw.githubusercontent.com/BoltsFramework/Bolts-Android/master/LICENSE"
+      }
+    },
+    {
+      "name": "Drawee",
+      "url": "https://github.com/facebook/fresco",
+      "license": {
+        "type": "url",
+        "content": "https://raw.githubusercontent.com/facebook/fresco/master/LICENSE"
+      }
+    },
+    {
+      "name": "Facebook Core",
+      "url": "https://github.com/facebook/fresco",
+      "license": {
+        "type": "url",
+        "content": "https://raw.githubusercontent.com/facebook/fresco/master/LICENSE"
+      }
+    },
+    {
+      "name": "FindBugs-jsr305",
+      "url": "https://github.com/amaembo/jsr-305",
+      "license": {
+        "type": "url",
+        "content": "https://raw.githubusercontent.com/amaembo/jsr-305/master/ri/LICENSE"
+      },
+      "override": true
+    },
+    {
+      "name": "Fresco",
+      "url": "https://github.com/facebook/fresco",
+      "license": {
+        "type": "url",
+        "content": "https://raw.githubusercontent.com/facebook/fresco/master/LICENSE"
+      }
+    },
+    {
+      "name": "ImagePipeline",
+      "url": "https://github.com/facebook/fresco",
+      "license": {
+        "type": "url",
+        "content": "https://raw.githubusercontent.com/facebook/fresco/master/LICENSE"
+      }
+    },
+    {
+      "name": "ImagePipeline-OkHttp 3 Integration",
+      "url": "https://github.com/facebook/fresco",
+      "license": {
+        "type": "url",
+        "content": "https://raw.githubusercontent.com/facebook/fresco/master/LICENSE"
+      }
+    },
+    {
+      "name": "ImagePipelineBase",
+      "url": "https://github.com/facebook/fresco",
+      "license": {
+        "type": "url",
+        "content": "https://raw.githubusercontent.com/facebook/fresco/master/LICENSE"
+      }
+    },
+    {
+      "name": "Javax.inject",
+      "url": "https://github.com/javax-inject/javax-inject",
+      "license": {
+        "type": "url",
+        "content": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      },
+      "override": true
+    },
+    {
+      "name": "OkHttp",
+      "url": "https://github.com/square/okhttp",
+      "license": {
+        "type": "url",
+        "content": "https://raw.githubusercontent.com/square/okhttp/master/LICENSE.txt"
+      }
+    },
+    {
+      "name": "OkHttp URLConnection",
+      "url": "https://github.com/square/okhttp",
+      "license": {
+        "type": "url",
+        "content": "https://raw.githubusercontent.com/square/okhttp/master/LICENSE.txt"
+      }
+    },
+    {
+      "name": "Okio",
+      "url": "https://github.com/square/okio",
+      "license": {
+        "type": "url",
+        "content": "https://raw.githubusercontent.com/square/okio/master/LICENSE.txt"
+      }
+    },
+    {
+      "name": "ReactNative",
+      "url": "https://github.com/facebook/react-native",
+      "license": {
+        "type": "url",
+        "content": "https://raw.githubusercontent.com/facebook/react-native/master/LICENSE"
+      },
+      "skip": true
+    },
+    {
+      "name": "SoLoader",
+      "url": "https://github.com/facebook/soloader",
+      "license": {
+        "type": "url",
+        "content": "https://raw.githubusercontent.com/facebook/soloader/master/LICENSE"
+      }
+    },
+    {
+      "name": "StaticLayoutProxy",
+      "url": "https://github.com/facebookincubator/TextLayoutBuilder",
+      "license": {
+        "type": "url",
+        "content": "https://raw.githubusercontent.com/facebookincubator/TextLayoutBuilder/master/LICENSE"
+      }
+    },
+    {
+      "name": "TextLayoutBuilder",
+      "url": "https://github.com/facebookincubator/TextLayoutBuilder",
+      "license": {
+        "type": "url",
+        "content": "https://raw.githubusercontent.com/facebookincubator/TextLayoutBuilder/master/LICENSE"
+      }
+    }
+  ],
+  "external": [
+    {
+      "name": "Android Open Source Project",
+      "url": "https://source.android.com/",
+      "license": {
+        "type": "url",
+        "content": "http://www.apache.org/licenses/LICENSE-2.0.txt"
+      }
+    },
+    {
+      "name": "JavaScriptCore",
+      "url": "https://github.com/react-community/jsc-android-buildscripts",
+      "license": {
+        "type": "url",
+        "content": "https://svn.webkit.org/repository/webkit/releases/WebKitGTK/webkit-2.18.2/Source/JavaScriptCore/COPYING.LIB"
+      }
+    }
+  ]
+}
