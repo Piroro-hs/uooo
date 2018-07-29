@@ -22,7 +22,7 @@ const retriveNpm = async () => {
           loader: 'babel-loader',
         },
       ],
-      noParse: [/node_modules(\/|\\)react-native(\/|\\)/, /\.(?!js|json)[^./]+$/],
+      noParse: [/node_modules(\/|\\)react-native(\/|\\)/, /\.(?!js|json)[^./]+$/i],
     },
   });
   await promisify(unlink)(resolvePath(__dirname, 'bundle.js')).catch(() => {});
@@ -37,7 +37,7 @@ const retriveNpm = async () => {
     .filter(([key]) => npmDeps.some(name => key.startsWith(`${name}@`)))
     .sort()
     .map(([key, {repository: url, licenseFile}]) => ({
-      name: /(.+)@\d+\.\d+\.\d+(|-[0-9A-Za-z-]+|\+[0-9A-Za-z-]+)$/.exec(key)[1],
+      name: /(.+)@\d+\.\d+\.\d+(-[\w-]+(\.[\w-]+)*)?(\+[\w-]+(\.[\w-])*)?$/.exec(key)[1], // /\w/ contains _, but it's ok.
       url,
       license: licenseFile ? {type: 'file', content: licenseFile} : null,
     }))
@@ -57,7 +57,7 @@ const retriveGradle = async () => {
       'utf8',
     ),
   ).map(({project: name, url, licenses: [{license_url: licenseUrl} = {}]}) => {
-    const gitHubRegExp = /^(?:|http(?:|s):\/\/)github.com\/([\w-.]+\/[\w-.]+)\/blob/i;
+    const gitHubRegExp = /^(?:https?:\/\/)?github.com\/([\w-.]+\/[\w-.]+)\/blob/i;
     return {
       name,
       url,
