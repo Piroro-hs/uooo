@@ -1,0 +1,12 @@
+def version = new groovy.json.JsonSlurper().parseText(new File("$rootDir/../package.json").text).version
+def matcher = version =~ /^(\d+)\.(\d+)\.(\d+)(?:-([\w-])+(?:\.([\w-]+))*)?/ // 1.0.0-alpha.1
+def major = matcher[0][1] as int
+def minor = matcher[0][2] as int
+def patch = matcher[0][3] as int
+def preIdentifier = matcher[0][4]
+def preVersion = (matcher[0][5] ?: '0') as int
+
+ext {
+    appVersionCode = major * 10000000 + minor * 100000 + patch * 1000 + (preIdentifier == 'alpha' ? 1 : preIdentifier == 'beta' ? 3 : preIdentifier == 'rc' ? 5 : 9) * 100 + preVersion
+    appVersionName = version
+}

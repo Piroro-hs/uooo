@@ -101,7 +101,7 @@ android {
         applicationId "com.uooo"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 1
+        versionCode rootProject.ext.appVersionCode
         versionName rootProject.ext.appVersionName
         ndk {
             abiFilters "armeabi-v7a", "x86"
