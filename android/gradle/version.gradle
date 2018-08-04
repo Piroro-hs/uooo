@@ -5,9 +5,13 @@ def minor = matcher[0][2] as int
 def patch = matcher[0][3] as int
 def preIdentifier = matcher[0][4]
 def preVersion = (matcher[0][5] ?: '0') as int
+def preIdentifiers = ['alpha': 0, 'beta': 3, 'rc': 6]
+
+if (major > 99 || minor > 99 || patch > 99 || preVersion > 29) {
+    throw new IllegalArgumentException('Version number is too big')
+}
 
 ext {
-    // major, minor, patch <= 99, preVersion <= 59
-    appVersionCode = major * 1000000 + minor * 10000 + patch * 100 + (preIdentifier == 'alpha' ? 1 : preIdentifier == 'beta' ? 2 : preIdentifier == 'rc' ? 3 : 4) * 10 + preVersion
+    appVersionCode = major * 1000000 + minor * 10000 + patch * 100 + (preIdentifiers.containsKey(preIdentifier) ? preIdentifiers.get(preIdentifier) * 10 + preVersion : 90)
     appVersionName = version
 }
