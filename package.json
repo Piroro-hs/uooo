@@ -2,11 +2,15 @@
   "name": "uooo",
   "version": "0.0.1",
   "private": true,
+  "license": "CC0-1.0",
   "scripts": {
     "license:generate": "node scripts/license/generate.js",
     "license:updateList": "node scripts/license/updateList.js",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
+  },
+  "jest": {
+    "preset": "react-native"
   },
   "dependencies": {
     "jsc-android": "^224109.0.0",
@@ -26,8 +30,5 @@
     "react-test-renderer": "16.4.1",
     "request": "^2.87.0",
     "webpack": "^4.16.1"
-  },
-  "jest": {
-    "preset": "react-native"
   }
 }
