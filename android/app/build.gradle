@@ -108,6 +108,16 @@ android {
                 abiFilters "armeabi-v7a", "x86"
             }
         }
+        externalNativeBuild {
+            cmake {
+                arguments "-DANDROID_STL=c++_shared"
+            }
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path "src/main/cpp/CMakeLists.txt"
+        }
     }
     splits {
         abi {
